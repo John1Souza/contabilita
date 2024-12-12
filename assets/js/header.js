@@ -26,34 +26,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    if(window.innerWidth < 1024){
-        document.querySelectorAll('.card-servicos-left').forEach(() =>{
-            document.querySelector('.card-servicos-left').classList.add('active');
-        })
-    }
 });
 
 
-// window.addEventListener('load', () => {
-//     const header = document.querySelector('header');
-//     const inicio = document.querySelector('#inicio');
-//     if (window.innerWidth < 600){
-    
-//         if (header && inicio) {
-//             const headerHeight = header.offsetHeight; // Obtém a altura do header
-//             inicio.style.marginTop = `${headerHeight}px`;
-//         }
-//     }
-// });
-
-// // Atualiza dinamicamente em caso de redimensionamento
-// window.addEventListener('resize', () => {
-//     const header = document.querySelector('header');
-//     const inicio = document.querySelector('#inicio');
-    
-//     if (header && inicio) {
-//         const headerHeight = header.offsetHeight;
-//         inicio.style.marginTop = `${headerHeight}px`;
-//     }
-   
-// });
+const buttonResize = () => {
+			const cta = document.querySelectorAll('.cta');
+			cta.forEach(() => {
+				const ctaButton = document.querySelector('.cta');
+				if (window.innerWidth < 1024){
+					ctaButton.classList.remove("cta");
+					ctaButton.classList.add("cta-servicos");
+				}	
+			})
+		
+     
+ }
+window.addEventListener('resize', buttonResize );
+window.addEventListener('load', buttonResize );
