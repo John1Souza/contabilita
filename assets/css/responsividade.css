@@ -20,9 +20,15 @@
     }
 
     .conteudo-sobre {
+        flex-direction: column;
+        height: auto;
+        gap: 1.1rem;
+    }
+
+    #conteudo-sobre-02 {
         flex-direction: column-reverse;
         height: auto;
-        gap: 3rem;
+        gap: 1.1rem;
     }
 
     .left-sobre {
@@ -51,12 +57,6 @@
 
     .titulo-servicos h1 {
         font-size: 6rem;
-    }
-
-    .descricao-servicos {
-        width: 100%;
-        text-align: right;
-        font-size: 1.4rem;
     }
 
     /************************** PORTFOLIO ***/
@@ -240,9 +240,11 @@
         display: flex;
         opacity: 1;
     }
+
+    
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
     .conteudo-skills {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -252,7 +254,8 @@
     }
 
     #bg-inicio-mobile {
-        display: none;
+     display: none;   
     }
+    
 
 }

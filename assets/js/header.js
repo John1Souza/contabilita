@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // Elementos de controle do menu
     const menuToggle = document.getElementById('menuToggle');
@@ -24,6 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
             body.classList.remove('no-scroll');
         });
     });
+
+    if(window.innerWidth < 1024){
+        document.querySelectorAll('.card-servicos-left').forEach(() =>{
+            document.querySelector('.card-servicos-left').classList.add('active');
+        })
+    }
 });
 
 
