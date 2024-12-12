@@ -7,7 +7,7 @@ Bem-vindo ao **Template de Landing Page para Portfólio**, um projeto gratuito q
 
 Você pode visualizar o site de exemplo no seguinte link:
 
-👉 [Visualizar Site Exemplo](https://silly-pastelito-c73724.netlify.app)
+👉 [Visualizar Site Exemplo](https://john1souza.github.io/contabilita/#inicio)
 
 ## 🚀 Funcionalidades
 
@@ -61,23 +61,17 @@ Planejo melhorar e atualizar o template com novos recursos e seções. Algumas d
 
 ## 👨‍🏫 Sobre Mim
 
-Eu sou **Ricardo Moura**, desenvolvedor web freelancer e criador de conteúdo focado em programação e tecnologia. Meu objetivo é ajudar outros desenvolvedores a terem sucesso no mercado de trabalho freelancer, oferecendo dicas, estratégias e templates como este.
+Eu sou **Johnatas Souza**, desenvolvedor web freelancer
 
 Se você gostou deste projeto ou deseja aprender mais sobre como melhorar seus projetos, siga-me nas minhas redes sociais para mais conteúdos:
 
-- **Instagram:** [@riicardomoura](https://www.instagram.com/riicardomoura/)
-- **LinkedIn:** [Ricardo Moura](https://www.linkedin.com/in/ricardomouradev/)
-- **Meus Links:** [RM│Dev.](https://rmdeveloper.com.br/meus-links)
+- **Instagram:** [@johnatassouza](https://www.instagram.com/johnatassouza/)
+- **LinkedIn:** [Johnatas Pereira de Souza](https://www.linkedin.com/in/johnatas-pereira-de-souza-7153b3240/)
+- **Meus Links:** [John.Dev](https://john1souza.github.io/portfolio/)
 
 ## 🎁 Como Contribuir
 
 Se você tem sugestões de melhorias ou encontrou algum bug, fique à vontade para contribuir com o projeto. Basta abrir uma issue ou fazer um pull request.
-
----
-
-Espero que este template ajude você a criar um portfólio incrível e a se destacar no mercado. Se precisar de ajuda, estarei por aqui!
-
-Se você utilizar o template e postar no Instagram ou outra rede social, me marque! Ficarei feliz em reagir à sua postagem.
 
 ### Licença
 
