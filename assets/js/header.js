@@ -26,6 +26,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    document.querySelector("#link-inicio").classList.add("active");
+    
+    const menuLinks = document.querySelectorAll("#navigation-menu-list a");
+        menuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                menuLinks.forEach(item => item.classList.remove("active"));
+                
+                link.classList.add("active");
+            });
+        });
+
 });
 
 

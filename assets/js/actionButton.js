@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const backToTopButton = document.getElementById('backToTop');
     const whatsappButton = document.getElementById('whatsappButton');
 
-    // Função para exibir ou esconder os botões ao rolar a página
+    //Função para exibir ou esconder os botões ao rolar a página
     function toggleButtons() {
         const scrollPosition = window.scrollY;
-        if (scrollPosition > 100) {
+        if (scrollPosition = 0) {
             backToTopButton.style.display = 'flex';
             whatsappButton.style.display = 'flex';
             setTimeout(() => {
