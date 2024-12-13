@@ -34,6 +34,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-ScrollReveal().reveal('.card-servicos-left', {delay: 200});
-ScrollReveal().reveal('.card-servicos', {delay: 300});
 
