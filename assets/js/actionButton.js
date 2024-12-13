@@ -5,30 +5,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const backToTopButton = document.getElementById('backToTop');
-    const whatsappButton = document.getElementById('whatsappButton');
+    const whatsappButtonFlutuante = document.getElementById('whatsappButton');
+    const ctaButton = document.querySelectorAll('.cta');
+    const ctaButtonServicos = document.querySelectorAll('.cta-servicos');
+    
+    ctaButton.forEach(function (cta) {
+        cta.addEventListener('click', function () {
+            window.open('https://wa.me/5561993430859', '_blank'); 
+        })
+    })
+    
+    ctaButtonServicos.forEach(function (cta) {
+        cta.addEventListener('click', function () {
+            window.open('https://wa.me/5561993430859', '_blank'); 
+        })
+    })
 
-    //Função para exibir ou esconder os botões ao rolar a página
-    function toggleButtons() {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition = 0) {
-            backToTopButton.style.display = 'flex';
-            whatsappButton.style.display = 'flex';
-            setTimeout(() => {
-                backToTopButton.style.opacity = '1';
-                whatsappButton.style.opacity = '1';
-            }, 10);
-        } else {
-            backToTopButton.style.opacity = '0';
-            whatsappButton.style.opacity = '0';
-            setTimeout(() => {
-                backToTopButton.style.display = 'none';
-                whatsappButton.style.display = 'none';
-            }, 500);
-        }
-    }
-
-    // Adiciona o evento de scroll para exibir ou esconder os botões
-    document.addEventListener('scroll', toggleButtons);
 
     // Ação ao clicar no botão "Voltar ao Topo"
     backToTopButton.addEventListener('click', function () {
@@ -36,7 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Ação ao clicar no botão do WhatsApp
-    whatsappButton.addEventListener('click', function () {
-        window.location.href = 'https://wa.me/5599999999999';
+    whatsappButtonFlutuante.addEventListener('click', function () {
+        window.open('https://wa.me/5561993430859', '_blank');
     });
+
 });
+
+ScrollReveal().reveal('.card-servicos-left', {delay: 200});
+ScrollReveal().reveal('.card-servicos', {delay: 300});
