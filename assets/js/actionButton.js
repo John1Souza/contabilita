@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             window.open('https://wa.me/5561993430859', '_blank'); 
         })
     })
-    
+
     ctaButtonServicos.forEach(function (cta) {
         cta.addEventListener('click', function () {
             window.open('https://wa.me/5561993430859', '_blank'); 
@@ -36,3 +36,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 ScrollReveal().reveal('.card-servicos-left', {delay: 200});
 ScrollReveal().reveal('.card-servicos', {delay: 300});
+
