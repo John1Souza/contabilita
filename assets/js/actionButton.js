@@ -17,7 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ctaButtonServicos.forEach(function (cta) {
         cta.addEventListener('click', function () {
-            window.open('https://wa.me/5561993430859', '_blank'); 
+            const appUrl = `whatsapp://send?phone=5561993430859`;
+            const webUrl = `https://wa.me/5561993430859`;
+      
+            window.open(appUrl, '_blank'); 
+        
+    
+            setTimeout(() => {
+                window.open(webUrl, '_blank');;
+            }, 500); // 500ms para permitir a tentativa de abrir o app
         })
     })
 
@@ -28,8 +36,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Ação ao clicar no botão do WhatsApp
-    whatsappButtonFlutuante.addEventListener('click', function () {
-        window.open('https://wa.me/5561993430859', '_blank');
+    whatsappButtonFlutuante.addEventListener('click', function () {        
+        const appUrl = `whatsapp://send?phone=5561993430859`;
+        const webUrl = `https://wa.me/5561993430859`;
+  
+        window.open(appUrl, '_blank'); 
+    
+
+        setTimeout(() => {
+            window.open(webUrl, '_blank');;
+        }, 500);
     });
 
 });
