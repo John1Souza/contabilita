@@ -1,12 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Elementos de controle do menu
     const menuToggle = document.getElementById('menuToggle');
     const menuAberto = document.querySelector('.menu-aberto');
     const navLinks = document.querySelectorAll('.nav-menu a');
     const body = document.body;
 
-    // Abre/fecha o menu ao mudar o estado do checkbox
     menuToggle.addEventListener('change', function () {
         if (menuToggle.checked) {
             menuAberto.classList.add('active');
@@ -17,29 +15,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Fecha o menu ao clicar em um link de navegação
     navLinks.forEach(link => {
-        link.addEventListener('click', function () {
+        link.addEventListener('click', function () { 
             menuToggle.checked = false;
             menuAberto.classList.remove('active');
             body.classList.remove('no-scroll');
         });
     });
-
     document.querySelector("#link-inicio").classList.add("active");
-    
     const menuLinks = document.querySelectorAll("#navigation-menu-list a");
         menuLinks.forEach(link => {
             link.addEventListener("click", () => {
                 menuLinks.forEach(item => item.classList.remove("active"));
-                
                 link.classList.add("active");
             });
         });
 
 });
-
-
 const buttonResize = () => {
 			const cta = document.querySelectorAll('.cta');
 			cta.forEach(() => {
