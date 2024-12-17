@@ -1,1 +1,251 @@
-@media (max-width:1024px){.logo img{width:125px;height:auto}.container-sobre,.sobre{height:auto}.headline-sobre{height:auto;position:relative}.conteudo-sobre{flex-direction:column;height:auto;gap:1.1rem}#conteudo-sobre-02{flex-direction:column-reverse;height:auto;gap:1.1rem}.left-sobre,.right-sobre{width:100%;height:auto}.img-sobre{width:100%}.headline-servicos{flex-direction:column;height:auto}.titulo-servicos{width:100%;display:flex;align-items:center;justify-content:left}.titulo-servicos h1{font-size:2rem}#bg-inicio,#navigation-menu-wrapper{display:none}.header{max-width:100%;padding:1rem .5rem}.container-inicio{width:100%;color:var(--color-white);position:unset;padding:1rem;margin:0;gap:1rem}#bg-inicio-mobile{width:100%;display:flex;opacity:1}.credits-column{gap:1rem}.footer-direitos{flex-direction:column;gap:.5rem;text-align:center}.footer-botoes-b{width:40px;height:40px}#whatsappButton{width:50px;height:50px}#whatsappButton i{font-size:24px}#desenvolvido-por{font-size:clamp(.4rem, 2vw, .8rem)}}@media (min-width:1024px){.conteudo-skills{grid-template-columns:repeat(4,1fr)}#bg-inicio-mobile,#menu-mobile{display:none}}
+/* Low resolution Tablets and iPads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .inicio {
+        margin-top: 80px;
+    }
+
+    .logo {
+        display: none;
+    }
+    .container-inicio {
+        width: 100%;
+        height: 65vh;
+        color: var(--color-white);
+        position: relative;
+        top: 0;
+        margin: 0;
+        background-image: url('../img/bg-vertical-md-darken.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+    }
+    .conteudo-inicio {
+        display: flex;
+        width: 100%;
+        position: relative;
+        top: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-inicio {
+        display: flex;
+        justify-content: center;
+    }
+    .logo-inicio img {
+        width: 70%;
+    }
+    .container-sobre,
+    .sobre {
+        height: auto;
+    }
+    .headline-sobre {
+        height: auto;
+        position: relative;
+    }
+    .left-sobre,
+    .right-sobre {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .img-sobre, .img-sobre-02 {
+        width: 100%;
+    }
+    .textos-sobre p, 
+    .textos-sobre-2 > p, .textos-sobre p > span,
+    .textos-sobre-2 > p > span {
+        font-size: 1.5rem;
+    }
+    .headline-servicos {
+        flex-direction: column;
+        height: auto;
+    }
+    .titulo-servicos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    #bg-inicio,
+    #navigation-menu-wrapper {
+        display: none;
+    }
+    .header {
+        max-width: 100%;
+        padding: 1rem 0.5rem;
+    }
+    .card-servicos {
+        width: 80%;
+        height: 300px;
+        padding: 1.5rem 1rem;
+        }
+
+    .card-titulo > h1 {
+        margin-bottom: 1.5rem;    
+    }
+    #bg-inicio-mobile {
+        width: 100%;
+        display: flex;
+        opacity: 1;
+    }
+    .credits-column {
+        gap: 1rem;
+    }
+    .footer-direitos {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .footer-botoes-b {
+        width: 40px;
+        height: 40px;
+    }
+    #whatsappButton {
+        width: 50px;
+        height: 50px;
+    }
+    #whatsappButton i {
+        font-size: 24px;
+    }
+    #desenvolvido-por {
+        font-size: clamp(0.4rem, 2vw, 0.8rem);
+    }
+
+    .logo-footer img {
+        width: 100%;
+    }
+}
+        
+/* Tablets iPads (Portrait) */
+@media (min-width: 768px) and (max-width: 1023px){
+    .inicio {
+        margin-top: 80px;
+    }
+
+    .logo {
+        display: none;
+    }
+    .container-inicio {
+        width: 100%;
+        height: 100vh;
+        color: var(--color-white);
+        position: relative;
+        top: 0;
+        margin: 0;
+        background-image: url('../img/bg-vertical-md-darken.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+    }
+    .conteudo-inicio {
+        display: flex;
+        width: 100%;
+        position: relative;
+        top: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-inicio {
+        display: flex;
+        justify-content: center;
+    }
+    .logo-inicio img {
+        width: 70%;
+    }
+    .container-sobre,
+    .sobre {
+        height: auto;
+    }
+    .headline-sobre {
+        height: auto;
+        position: relative;
+    }
+
+    #conteudo-sobre-02 {
+        height: auto;
+        gap: 1.1rem;
+    }
+    .left-sobre,
+    .right-sobre {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .img-sobre, .img-sobre-02 {
+        width: 100%;
+    }
+
+    .textos-sobre p, 
+    .textos-sobre-2 > p, .textos-sobre p > span,
+    .textos-sobre-2 > p > span {
+        font-size: 1.5rem;
+    }
+    .headline-servicos {
+        flex-direction: column;
+        height: auto;
+    }
+    .titulo-servicos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    #bg-inicio,
+    #navigation-menu-wrapper {
+        display: none;
+    }
+    .header {
+        max-width: 100%;
+        padding: 1rem 0.5rem;
+    }
+    .card-servicos {
+        width: 80%;
+        height: 300px;
+        padding: 1.5rem 1rem;
+        }
+
+    .card-titulo > h1 {
+        margin-bottom: 1.5rem;    
+    }
+    #bg-inicio-mobile {
+        width: 100%;
+        display: flex;
+        opacity: 1;
+    }
+    .credits-column {
+        gap: 1rem;
+    }
+    .footer-direitos {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .footer-botoes-b {
+        width: 40px;
+        height: 40px;
+    }
+    #whatsappButton {
+        width: 50px;
+        height: 50px;
+    }
+    #whatsappButton i {
+        font-size: 24px;
+    }
+    #desenvolvido-por {
+        font-size: clamp(0.4rem, 2vw, 0.8rem);
+    }
+
+    .logo-footer img {
+        width: 100%;
+    }
+}
+    
+/* Laptops and Desktops */
+@media (min-width: 1024px) {
+    #bg-inicio-mobile, .menu, .menu-aberto {
+        display: none;
+    }
+}
+
