@@ -38,7 +38,6 @@ Você pode personalizar todas as seções do template:
 - **Início:** Adicione seu nome, título e uma chamada para ação.
 - **Sobre:** Adicione uma descrição sobre você, suas habilidades e seus perfis de redes sociais.
 - **Serviços:** Inclua os serviços que você oferece.
-- **Portfólio:** Adicione seus trabalhos, clientes anteriores ou cases de sucesso.
 - **Contato:** Ofereça opções para clientes entrarem em contato.
 
 ## 🔧 Tecnologias Utilizadas
