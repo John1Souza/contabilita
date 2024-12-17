@@ -7,23 +7,23 @@
     <title>Contabilitá</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsividade.css">
-  
+    <link rel="stylesheet" href="assets/css/responsividade.css">  
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/img/bg-vertical.webp" type="image/webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">  
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    
+    <link rel="icon" sizes="48x48" href="./assets/img/favicon.png" type="image/png">    
 </head>
-
 <body>    
-    
-
     <div class="container">
-
-        
         <header class="header">
             <div class="logo">
-                <img src="assets/img/logo-01.webp" alt="">
+                <img src="assets/img/logo-01.png" alt="">
             </div>
             <div id="navigation-menu-wrapper">
                 <nav id="navigation-menu" class="navigation-menu">
@@ -58,7 +58,7 @@
     
         <main id="inicio" class="inicio">
             <img id="bg-inicio" src="./assets/img/bg-inicio.webp" alt="imagem de fundo"> 
-            <img id="bg-inicio-mobile" src="./assets/img/bg-vertical.webp" alt="imagem de fundo">
+            <img id="bg-inicio-mobile" fetchpriority="high" src="./assets/img/bg-vertical.webp" alt="imagem de fundo">
             <div class="container-inicio">
                 <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
                     <div class="logo-inicio">
@@ -236,14 +236,11 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="credits-column">
-               
+            <div class="credits-column">               
                 <div id="backToTop" class="footer-botoes-b">
                     <i class="bi bi-chevron-up"></i>
                 </div>
-                
-                <div class="footer-direitos">
+                 <div class="footer-direitos">
                     <img src="./assets/img/logo-01.webp" alt="logo Contabilitá">
                     <p>&copy; 2024 Todos os direitos reservados.</p>
                 </div>
@@ -255,22 +252,15 @@
              
             <p id="desenvolvido-por">Desenvolvido por <a href="https://www.instagram.com/johnatassouza.dev" target="_blank">@johnatassouza.dev</a></p>
         </footer>
-    
-
     </div>
-   
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/header.js" async></script>
+    <script src="assets/js/actionButton.js" async></script>
+    <script src="assets/js/menu.js" async></script>
 
-  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
-
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/actionButton.js"></script>
-    <script src="assets/js/menu.js"></script>
-
 </body>
 
 </html>

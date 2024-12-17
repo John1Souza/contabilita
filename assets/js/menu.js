@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded',function () {
     const menuToggle = document.getElementById('menuToggle');
     const menuAberto = document.querySelector('.menu-aberto');
     menuToggle.addEventListener('change', function () {
