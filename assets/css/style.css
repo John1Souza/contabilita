@@ -78,6 +78,11 @@ body {
   -webkit-overflow-scrolling: touch;
   transition: transform 0.3s ease-out;
 }
+.no-scroll {
+  height: 100%;
+  overflow-y: hidden;
+  position: fixed
+}
 .container,
 .nav-menu {
   flex-direction: column;
@@ -134,16 +139,21 @@ body {
   gap: 1rem;
   justify-content: right;
 }
-#navigation-menu-list li {
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s;
-}
-#navigation-menu-list > li > a {
+
+.navigation-menu-list a {
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
   font-family: var(--font-menu);
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+#navigation-menu-list li {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 #navigation-menu-list li a:hover,
 .nav-menu a:hover {
@@ -155,6 +165,8 @@ body {
   border-bottom: 2px solid var(--color-destaque1);
   padding-bottom: 0.5rem;
 }
+
+
 .menu {
   justify-content: flex-end;
   position: relative;
@@ -197,6 +209,7 @@ body {
   width: 100%;
   z-index: 98;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -321,11 +334,23 @@ body {
 }
 
 .left-sobre, .right-sobre {
+  width: 80%;
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
+.right-sobre {
+  justify-content: center;
+  align-items: center;
+}
+
+.left-sobre {
+  color: var(--color-white);
+  flex-direction: column;
+  align-items: center;
+}
+      
 #conteudo-sobre-02 {
   flex-direction: column-reverse;
 }
@@ -345,10 +370,6 @@ body {
 .social-links a:hover,
 .textos-sobre-2 > span {
   color: var(--color-destaque1);
-}
-.right-sobre {
-  justify-content: center;
-  align-items: center;
 }
 
 .textos-sobre-2 {
@@ -406,15 +427,18 @@ body {
   padding: 2rem 0;
 }
 
+.servicos-cards > *  {
+  flex: 1 1 325px;             
+}
 .card-servicos {
-    max-width: 350px; /* Limite máximo para evitar cartões muito largos */
+    max-width: 325px; /* Limite máximo para evitar cartões muito largos */
     min-width: 200px; /* Tamanho mínimo */
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 1rem;
+    justify-content: center;
+    padding: 1rem .5rem 2.5rem .5rem;
     border-radius: 49px;
     margin-bottom: 0.9rem;
     text-align: center;
@@ -422,14 +446,21 @@ body {
         180deg,
         #c99e67 0,
         rgba(201, 158, 103, 0.9) 10%,
-        #ffd7b8 60%,
-        #072442 100%
+        #ffd7b8 50%,
+        #072442 102%
     );
+    gap: 24px;
+    font-family: var(--font-cards);
 }
 
 
-.card-servicos > *  {
-  flex: 1 1 350px;             
+.card-servicos > h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.card-servicos p {
+  font-size: clamp(.95rem, 4.9vw, 1.55rem);
+  
 }
 .container-footer,
 .footer {
@@ -437,17 +468,7 @@ body {
   width: 100%;
   display: flex;
 }
-.card-titulo > h1 {
-  font-size: 1.9rem;
-  font-family: var(--font-cards);
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
 
-.card-titulo p {
-  font-size: clamp(1.5rem, 5vw, 1.9rem);
-  font-family: var(--font-cards);
-}
 .footer {
   background-color: var(--principal-color);
   padding: 3rem 1rem 1rem;
@@ -625,7 +646,45 @@ body {
 
   .cta svg {
     stroke: var(--principal-color);
-  }
+  }       
 
+  #portal-do-cliente {
+    color: #f6f6f6;
+    font-family: var(--font-cards);
+    font-size: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
-        
+#portal-do-cliente::before {
+    content: "";
+    position: absolute;
+    top: -50%; /* Começa fora do botão */
+    left: -150%; /* Fora da borda esquerda */
+    width: 200%; /* Ampla para cobrir a diagonal */
+    height: 200%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    transform: rotate(0deg);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0; /* Fica atrás do texto */
+}
+
+#portal-do-cliente:hover::before {
+    left: 100%; /* Movimenta o brilho para a direita */
+    opacity: 1; /* Ativa o brilho */
+    transition: left 1.5s ease, opacity 0.3s ease;
+}
+
+#portal-do-cliente:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#portal-do-cliente p {
+    z-index: 1; /* Garante que o texto fique acima do brilho */
+    position: relative;
+}
