@@ -1,0 +1,99 @@
+@media (min-width: 481px) and  (max-width: 767px) {
+    .inicio {
+      background-size: cover;
+      background-position: center top;
+      height: 100vh;
+    }
+    .conteudo-inicio {
+      width: 70%;
+      margin: 0;
+      margin-top: 1rem;
+    }
+    #conteudo-sobre-02 {
+        flex-direction: row;
+      }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  .inicio {
+    background-size: 100%;
+    background-position: center top;
+    height: 100vh;
+    margin: 0;
+  }
+  .conteudo-inicio {
+    width: 70%;
+    margin-top: 6rem;    
+  }
+  #conteudo-sobre-02 {
+      flex-direction: row;
+    }
+}
+@media (min-width: 1024px) {
+	.logo {display: flex;}
+	#navigation-menu-wrapper {display:flex;}
+    #navigation-menu {
+  		display: flex;
+	}	
+    .inicio {
+        justify-content: center;
+        background-image: url('../img/bg-inicio.webp');  
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        margin: 0;        
+      }
+
+    .container-inicio {
+        width: 50%;
+      }
+
+    .conteudo-sobre {
+    	width: 100%;
+    	height: auto;    
+    }      
+      #conteudo-sobre-02 {
+        flex-direction: row;
+      }
+      .left-sobre {
+        width: 80%;
+      }
+      .textos-sobre,
+      .textos-sobre-2 {
+        width: 80%;
+      }
+      .textos-sobre, 
+      .textos-sobre-2, .textos-sobre> span,
+      .textos-sobre-2 > span {
+          font-size: 2rem;
+      }
+      
+      .textos-sobre > span {
+        color: #e4ded7;
+      }
+      .footer p a:hover,
+      .social-links a:hover,
+      .textos-sobre-2 > p > span {
+        color: var(--color-destaque1);
+      }
+      
+      .textos-sobre-2 {
+        color: #e4ded7;
+      }
+      .textos-sobre-2 > span {
+        font-weight: 900;
+      }
+      .img-sobre,
+      .img-sobre-02 {
+        width: 80%;
+      }
+      #whatsappButton i {
+        font-size: 48px;
+      }
+    .menu, .menu-aberto {
+        display: none;
+    }
+
+    .footer-direitos {
+      flex-direction: row;
+    }
+}

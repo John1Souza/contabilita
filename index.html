@@ -8,13 +8,11 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade.css">  
-
+    <link href="./assets/img/bg-vertical.webp" rel="preload" as="image" media="(max-width: 480px)">
+	<link href="./assets/img/bg-vertical-md-darken.webp" rel="preload" as="image" media="(min-width: 481px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;600&display=swap" as="font" type="font/woff2" crossorigin>
-
-	<link href="./assets/img/bg-vertical.webp" rel="preload" as="image" media="(max-width: 480px)">
-	<link href="./assets/img/bg-vertical-md-darken.webp" rel="preload" as="image" media="(min-width: 481px)">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;600&display=swap" as="font" type="font/woff2" crossorigin>	
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">  
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -34,9 +32,9 @@
                         <li><a id="link-servicos" href="#servicos">SERVIÇOS</a></li>
                         <li><a id="link-contato" href="#footer">CONTATO</a></li>
                     </ul>
-		<button id="portal-do-cliente">
-                	<p><a>Portal do Cliente</a></p>
-            	</button>
+                    <button id="portal-do-cliente">
+                        <p><a>Portal do Cliente</a></p>
+                    </button>
                 </nav>
             
             <div class="menu" id="menu-mobile">
@@ -56,7 +54,7 @@
                     <a href="#sobre">SOBRE</a>
                     <a href="#servicos">SERVIÇOS</a>
                     <a href="#footer">CONTATO</a>
-                    <button class="cta" id="portal-do-cliente">
+                    <button id="portal-do-cliente">
                         <p><a>Portal do Cliente</a></p>
                     </button>
                 </nav>
@@ -76,9 +74,9 @@
             </div>
         </main>
       
-        <section id="sobre" class="sobre">
+        <section id="sobre" class="sobre" >
             <div class="container-sobre">
-                <div class="conteudo-sobre">
+                <div class="conteudo-sobre" id="conteudo-sobre-01">
                     <div class="left-sobre" data-aos="fade-right" data-aos-duration="1000">                  
                         <p class="textos-sobre">
                             Contabilidade especializada em oferecer serviços personalizados para profissionais da saúde, 
@@ -101,7 +99,6 @@
                             para garantir que sua empresa esteja sempre em conformidade e com os melhores resultados financeiros.
                         </p>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -151,7 +148,7 @@
                     <img src="./assets/img/logo-01.webp" alt="logo Contabilitá">
                     <h2 >Vamos transformar números em soluções? Fale conosco 
                         e descubra como podemos simplificar sua gestão e impulsionar o seu negócio!</h2>
-		            <button class="cta" >
+		            <button class="cta" id="fale-conosco">
                         <p>Fale Conosco</p>
                         <svg width="20px" height="15px" viewBox="0 0 13 10">
                             <path d="M1,5 L11,5"></path>
