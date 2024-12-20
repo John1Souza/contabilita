@@ -11,14 +11,14 @@
         width: 100%;
         margin: 0;
     }
-    .conteudo-inicio {
-      width: 90%;
-    }
+    
     .logo-inicio {
         width: 80%;
     }  */
    
-    
+    .conteudo-inicio {
+      width: 75%;
+    }
     #conteudo-sobre-02 {
         flex-direction: row;
       }
@@ -32,8 +32,8 @@
 /* Laptops and Desktops */
 @media (min-width: 1024px) {
 	.header{}
-	.logo {display: flex;max-width: 700px;}
-	#navigation-menu-wrapper {display:flex;max-width: 700px;}
+	.logo {display: flex;}
+	#navigation-menu-wrapper {display:flex;}
     #navigation-menu {
   		display: flex;
 	}	

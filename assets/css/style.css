@@ -120,19 +120,20 @@ body {
   width: 100%;
   height: auto;
   padding-left: 1.5rem;
+	max-width: 500px;
 }
 .logo img {
   width: 200px;
   height: auto;
 }
-#navigation-menu-wrapper {
-	display: none;
+
+#navigation-menu {
+  display: none;
   width: 100%;
   height: auto;
   justify-content: right;
-}
-#navigation-menu {
-  padding: 1rem;
+  max-width: 900px;
+  padding: .5rem;
 }
 #navigation-menu-list {
   display: flex;
@@ -151,7 +152,8 @@ body {
   transition: border-color 0.3s ease;
 }
 #navigation-menu-list li {
-  padding-bottom: 0.5rem;
+  display:flex;
+  justify-content:center;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
 }
@@ -163,7 +165,7 @@ body {
 .navigation-menu-list li a.active {
   color: var(--color-destaque1);
   border-bottom: 2px solid var(--color-destaque1);
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
 }
 
 
@@ -254,14 +256,14 @@ body {
 }
 .inicio {
   width: 100%;	
-  height: 100vh;
+  height: 60vh;
   background-image: url('../img/bg-vertical-md-darken.webp');  
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center top;
   background-repeat: no-repeat;
   align-items: flex-end;
-  margin-top: 4rem;
+  margin-top: 5rem;
   justify-content: flex-start;
 }
 
@@ -271,21 +273,19 @@ body {
   align-items: center;
   justify-content: center; 
   margin: 0;
-  margin-top: 1.5rem;
 }
 .conteudo-inicio {
-  width: 90%;
+  width: 55%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 0.5rem;
 }
 
 .paragrafo-inicio {
-  font-size: clamp(.7rem, 1.5rem, 3.5vw);
+  font-size: clamp(.5rem, 1.2rem, 2.5vw);
   color: var(--principal-color);
   font-family: var(--font-menu);
   font-weight: 600;
@@ -649,13 +649,21 @@ body {
   }       
 
   #portal-do-cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-destaque1);
+    border-radius: 25px;
     color: #f6f6f6;
-    font-family: var(--font-cards);
-    font-size: 1.5rem;
+    font-family: var(--font-menu);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-left: .5rem;
 }
 
 #portal-do-cliente::before {
@@ -686,5 +694,7 @@ body {
 
 #portal-do-cliente p {
     z-index: 1; /* Garante que o texto fique acima do brilho */
+	font-size: 1.25rem;
+	font-weight: 600;
     position: relative;
 }
