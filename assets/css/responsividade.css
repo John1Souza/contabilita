@@ -1,7 +1,6 @@
 @media (min-width: 481px) and  (max-width: 767px) {
     .inicio {
-      background-size: cover;
-      background-position: center top;
+      background-size: 120%;
       height: 100vh;
     }
     .conteudo-inicio {
@@ -16,7 +15,6 @@
 @media (min-width: 768px) and (max-width: 1023px){
   .inicio {
     background-size: 100%;
-    background-position: center top;
     height: 100vh;
     margin: 0;
   }
@@ -37,8 +35,8 @@
     .inicio {
         justify-content: center;
         background-image: url('../img/bg-inicio.webp');  
-        background-size: cover;
-        background-position: center center;
+        background-size: 100%;
+        background-position: center top;
         height: 100vh;
         margin: 0;        
       }
@@ -86,8 +84,9 @@
       .img-sobre-02 {
         width: 80%;
       }
-      #whatsappButton i {
-        font-size: 48px;
+	#whatsappButton {}
+      #whatsappButton svg {
+        
       }
     .menu, .menu-aberto {
         display: none;
